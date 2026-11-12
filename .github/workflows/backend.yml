@@ -31,7 +31,6 @@ jobs:
       - name: Build and Push
         uses: docker/build-push-action@v3
         with:
-          context: .
-          file: ./backend/Dockerfile
+          context: ./backend
           push: true
           tags: 452295101062.dkr.ecr.eu-west-1.amazonaws.com/dev/backend:${{ github.run_number }}
