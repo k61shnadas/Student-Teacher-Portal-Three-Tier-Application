@@ -29,5 +29,4 @@ ENV NODE_ENV=production
 EXPOSE 3500
 
 USER nodejs
-
 CMD ["node", "server.js"]
